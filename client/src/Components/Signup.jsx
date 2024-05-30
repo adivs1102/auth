@@ -12,7 +12,7 @@ const Signup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    Axios.post("http://13.200.26.173:3000/auth/signup", {
+    Axios.post("http://localhost:3000/auth/signup", {
       username,
       email,
       password,
