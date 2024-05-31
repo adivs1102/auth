@@ -12,12 +12,12 @@ app.use(express.json())
 const _dirname=path.dirname("")
 const buildpath=path.join(_dirname,"../client/dist")
 app.use(express.static(buildpath))
-app.use(cors(
-    {
-        origin: ["http://localhost:5173"],
-        credentials: true
-    }
-))
+// app.use(cors(
+//     {
+//         origin: ["http://localhost:5173"],
+//         credentials: true
+//     }
+// ))
 app.use(cookieParser())
 app.use('/auth', UserRouter)
 
