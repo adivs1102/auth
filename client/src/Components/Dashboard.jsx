@@ -6,7 +6,7 @@ const Dashboard = () => {
     const navigate=useNavigate()
     axios.defaults.withCredentials = true
     useEffect(() => {
-        axios.get('http://localhost:3000/auth/verify')
+        axios.get('/auth/verify')
         .then(res => {
             if(res.data.status){
                 
